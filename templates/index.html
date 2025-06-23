@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>AwsNginxApp</title></head>
+<body>
+  <h1>Введіть дані</h1>
+  <form method="POST" action="/add">
+    <input name="content" placeholder="Введіть щось">
+    <input type="submit" value="Додати">
+  </form>
+  <ul>
+    {% for entry in entries %}
+      <li>{{ entry.content }} — <a href="/delete/{{ entry.id }}">Видалити</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
