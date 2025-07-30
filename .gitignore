@@ -1,2 +1,9 @@
 venv
 __pycache__
+ssl/
+*.key
+*.pem
+db_backups/
+db_backup_logs/
+*.log
+.env
